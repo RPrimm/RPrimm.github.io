@@ -1,0 +1,226 @@
+/*********VARIABLES**********/
+:root {
+    /***font sizes***/    
+    --font-s: 1.3vmax;
+    --font-m: 2vmax;
+    --font-l: 3vmax;
+    --font-xl: 4vmax;
+
+    /***Colors***/   
+    --main-color: #613dff;
+    --html: #E34F26;
+    --css: #1572B6;
+    --javascript: #F7DF1E;
+    --java: #3a75b0;
+    --python: #fee362;
+    --node: #339933;
+    --react: #61DAFB;
+}
+.font-s{font-size: var(--font-s);}
+.font-m{font-size: var(--font-m);}
+.font-l{font-size: var(--font-l);}
+.font-xl{font-size: var(--font-xl);}
+
+
+
+/*********GENERAL**********/
+* {
+    font-family: Roboto, sans-serif;
+}
+
+body {
+    margin: 0;
+}
+
+.align {
+    margin-inline: 8vw;
+}
+
+.container {
+    height: 85vh;
+}
+
+.title {
+    padding-block: 1vh;
+    text-align: center;
+    font-size: 1.2vmax;
+}
+
+/*********HEADER**********/
+.header {
+    background-color: var(--main-color);
+    color: #FFF;
+    width: 100%;
+    height: 15vh;
+    position: sticky;
+    top: 0;
+    display: flex;
+    justify-content: center  ;
+}
+
+.header-content {
+    color: #efeded;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    font-size: 1.2vmax;
+    width: 70vw;
+}
+
+.header-buttons button {
+    background-color: inherit;
+    color: inherit;
+    border: none;
+    margin-inline: 1vmax;
+    font-size: 1.5vmax;
+}
+.header-buttons button:hover {
+    cursor: pointer;
+}
+
+/*********HOME**********/
+.home-content {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    height: 100%;
+    font-size: 5vmax;
+}
+
+
+/*********ABOUT**********/
+.about-main {
+    display: flex;
+}
+
+.about-main div {
+    width: 50%;
+    padding: 1vmax;
+    line-height: 1.6;
+    font-size: 1.5vmax;
+}
+
+.about-main-art {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.about-main-text {
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+
+/*********SKILLS**********/
+.skills-main{
+    display: flex;
+    justify-content: space-between;
+}
+
+.skills-info {
+    width: 45%;
+}
+
+.icons {
+    font-size: 6vmax;
+    display: grid;
+    grid-template-columns: repeat(auto-fill,minmax(10vmax, 1fr));
+    width: 45%;
+}
+.icons div {
+    padding: 1vmax;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: .2s;
+}
+.html{color: var(--html);}
+.html:hover {background-color: var(--html); color: #FFF;}
+.css{color: var(--css);}
+.css:hover{background-color: var(--css); color: #FFF;}
+.javascript{color: var(--javascript);}
+.javascript:hover{background-color: var(--javascript); color: #FFF;}
+.node{color: var(--node);}
+.node:hover{background-color: var(--node); color: #FFF;}
+.react{color: var(--react);}
+.react:hover{background-color: var(--react); color: #FFF;}
+.python{color: var(--python);}
+.python:hover{background-color: var(--python); color: #FFF;}
+.java{color: var(--java);}
+.java:hover{background-color: var(--java); color: #FFF;}
+
+.skills-info{
+    padding: 1vmax;
+    font-size: 1.5vmax;
+    transition: 0.2s;
+    background-color: #ededed;
+    color: #FFF;
+    line-height: 1.6;
+    border-radius: 10px;
+}
+
+.skill-info {
+    display: none;
+}
+
+
+/*********PORTFOLIO**********/
+.portfolio-main {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+.project {
+    color: #FFF;
+    width: 25vw;
+    height: 50vh;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+
+    img {
+        width: 25vw;
+        
+        border-radius: 10px 10px 0 0;
+    }
+}
+
+.project-info {
+    background-color: var(--main-color);
+    border-radius: 0 0 10px 10px;
+    padding: 1vmax;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.project-top {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.project-top-buttons {
+
+    button {
+        margin-right: 5px;
+        font-size: var(--font-s);
+        background-color: #ededed;
+        border: none;
+        svg{
+            margin-top: 2px;
+        }
+    }
+    button:hover {
+        cursor: pointer;
+        
+    }
+}
