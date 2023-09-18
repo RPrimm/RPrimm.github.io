@@ -35,17 +35,23 @@ function App() {
     .on('mouseenter', () => {$('#react-info').show(); $('.skills-info').css('background-color', '#61DAFB'); $('.skills-info-placeholder').hide();})
     .on('mouseleave', () => {$('#react-info').hide(); $('.skills-info').css('background-color', '#ededed'); $('.skills-info-placeholder').show()})
 
+  function scrollTo(element) {
+    $('html, body').animate({
+      scrollTop: $(element).offset().top  - $('.header').height()
+    }, 1000)
+  }
+
   return ( 
     <div className='App'>
       <div className='header'>
         <div className='header-content align'>
           <h1>Rocky Primm</h1>
           <div className='header-buttons'>
-            <a href='#home'>Home</a>
-            <a href='#about'>About</a>
-            <a href='#skills'>Skills</a>
-            <a href='#portfolio'>Portfolio</a>
-            <a>Contact</a>
+            <button onClick={() => {scrollTo('#home')}}>Home</button>
+            <button onClick={() => {scrollTo('#about')}}>About</button>
+            <button onClick={() => {scrollTo('#skills')}}>Skills</button>
+            <button onClick={() => {scrollTo('#portfolio')}}>Portfolio</button>
+            <button>Contact</button>
           </div>
         </div>
       </div>

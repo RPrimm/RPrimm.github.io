@@ -78,6 +78,9 @@ body {
 .header-buttons button:hover {
     cursor: pointer;
 }
+.header-buttons button:visited {
+    border-bottom: #FFF solid 3px;
+}
 
 /*********HOME**********/
 .home-content {
