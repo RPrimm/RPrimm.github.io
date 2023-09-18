@@ -1,7 +1,8 @@
-//import Header from './components/Header';
-import { SiNodedotjs, SiReact, SiJavascript, SiHtml5, SiCss3, SiPython, SiGithub } from 'react-icons/si';
+import { SiNodedotjs, SiReact, SiJavascript, SiHtml5, SiCss3, SiPython } from 'react-icons/si';
 import { FaJava } from 'react-icons/fa';
 import $ from 'jquery';
+
+import Project from './components/Project';
 
 
 function App() {
@@ -40,11 +41,11 @@ function App() {
         <div className='header-content align'>
           <h1>Rocky Primm</h1>
           <div className='header-buttons'>
-            <button>Home</button>
-            <button>About</button>
-            <button>Skills</button>
-            <button>Portfolio</button>
-            <button>Contact</button>
+            <a href='#home'>Home</a>
+            <a href='#about'>About</a>
+            <a href='#skills'>Skills</a>
+            <a href='#portfolio'>Portfolio</a>
+            <a>Contact</a>
           </div>
         </div>
       </div>
@@ -81,8 +82,7 @@ function App() {
           </div>
         </div>
       </div>
-
-      <div className='container'>
+      <div className='container' id='skills'>
         <div className='skills-content align'>
           <div className='title'>
               <h1>Skills</h1>
@@ -151,33 +151,13 @@ function App() {
             <h1>Portfolio</h1>
           </div>
           <div className='portfolio-main'>
-
-            <div className='project'>
-              <img src={process.env.PUBLIC_URL + '/dogs-in-the-forest.webp'} alt='ex'/>
-              <div className='project-info'>
-                <div className='project-top'>
-                  <h3 className='font-m' style={{margin: 0}}>Fake Store</h3>
-                  <div className='project-top-buttons'>
-                    <button><SiGithub /></button>
-                    <button>Check it out</button>
-                  </div>     
-                </div>
-                <div className='project-footer'>
-                  <div className='project-footer-languages font-s'>
-                    <div className='p-react font-s'>React</div>
-                    <div className='p-node'>Node.js</div>
-                  </div>
-                </div>
-              </div> 
-            </div>
-
+            <Project img={process.env.PUBLIC_URL + '/dogs-in-the-forest.webp'} title={'Fake Store'} languages={['React', 'Node.js']} />
+            <Project img={process.env.PUBLIC_URL + '/dogs-in-the-forest.webp'} title={'Fake Store'} languages={['React', 'Node.js']} />
+            <Project img={process.env.PUBLIC_URL + '/dogs-in-the-forest.webp'} title={'Fake Store'} languages={['React', 'Node.js']} />
+            <Project img={process.env.PUBLIC_URL + '/dogs-in-the-forest.webp'} title={'Fake Store'} languages={['React', 'Node.js']} />
           </div>
         </div>
       </div>
-
-
-
-
     </div>
   );
 }
