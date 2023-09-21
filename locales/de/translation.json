@@ -1,0 +1,31 @@
+{
+    "header": {
+        "home": "Startseite",
+        "about": "Über",
+        "skills": "Fähigkeiten",
+        "portfolio": "Portfolio"
+    },
+    "home": {
+        "hello": "Hallo"
+    },
+    "about": {
+        "title": "Über",
+        "description": "Ich studiere Informatik mit dem Schwerpunkt Sicherheit. Während meine Konzentration in der Sicherheit ist, habe ich mehr Interesse an Software-Entwicklung und Full-Stack-Entwicklung genommen. Ich möchte meine Karriere nach meinem Abschluss im Mai 2024 beginnen."
+    },
+    "skills": {
+        "title": "Fähigkeiten",
+        "description": "Ich habe schon früh angefangen, grundlegende Web-Entwicklungssprachen zu lernen. Seitdem habe ich mehr dynamische und objektorientierte orientierte Sprachen wie Python und Java. Da ich mich immer mehr für Entwicklung interessierte, lernte ich React und Node.js",
+        "html": "Ich habe schon als Kind Websites erstellt und kenne mich gut mit HTML aus.",
+        "css": "Ich kann problemlos reaktive Websites mit reinem CSS erstellen",
+        "javascript": "Ich benutze Javascript seit vielen Jahren, um Websites und Spiele zu erstellen.",
+        "java": "Mit Java habe ich Spiele, Analysesoftware und einen Datenstrukturvisualisierer entwickelt.",
+        "python": "Ich habe Python für viele meiner Kurse verwendet und habe damit Web-Scraper erstellt",
+        "node": "Ich habe mehrere Backends von To-Do-Listen bis zu Geschäften mit Node.js gebaut",
+        "react": "React ist mein neues Haupt-Frontend-Framework und ich habe mehrere Websites damit erstellt",
+        "year": "Jahre der Erfahrung: "
+    },
+    "footer": {
+        "explore": "Erkunden",
+        "find": "Find mich"
+    }
+}
