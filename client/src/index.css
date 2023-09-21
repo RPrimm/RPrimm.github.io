@@ -26,6 +26,10 @@
 /*********GENERAL**********/
 * {
     font-family: Roboto, sans-serif;
+
+    animation-duration: 0.5s;
+    animation-name: animate-pop;
+    animation-timing-function: cubic-bezier(.26, .53, .74, 1.48);
 }
 
 body {
@@ -37,7 +41,7 @@ body {
 }
 
 .container {
-    height: 85vh;
+    height: 90vh;
 }
 
 .title {
@@ -51,7 +55,7 @@ body {
     background-color: var(--main-color);
     color: #FFF;
     width: 100%;
-    height: 15vh;
+    height: 10vh;
     position: sticky;
     top: 0;
     display: flex;
@@ -64,6 +68,7 @@ body {
     display: flex;
     align-items: center;
     justify-content: space-between;
+    justify-self: center;
     font-size: 1.2vmax;
     width: 70vw;
 }
@@ -80,6 +85,28 @@ body {
 }
 .header-buttons button:visited {
     border-bottom: #FFF solid 3px;
+}
+
+.extra{
+    width: 4vw;
+    display: flex;
+}
+.space{
+    width: 4vw;
+}
+
+.language {
+    margin: 10px;
+    height: 5vh;
+    align-self: center;
+    background-color: #332183;
+    border: none;
+    font-size: 1.2vmax;
+    color: white;
+    border-radius: 10px;
+}
+.language:hover {
+    cursor: pointer;
 }
 
 /*********HOME**********/
@@ -118,6 +145,20 @@ body {
     flex-direction: column;
     align-items: center;
     justify-content: center;
+}
+
+.about-icons {
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.about-icon {
+    font-size: 3vmax;
+    transition: 0.1s;
+}
+.about-icon:hover {
+    cursor: pointer;
+    color: var(--main-color);
 }
 
 
@@ -225,7 +266,64 @@ body {
         }
     }
     button:hover {
-        cursor: pointer;
-        transform: translate(0, -10px);     
+        cursor: pointer;    
     }
+}
+
+/*********FOOTER**********/
+.footer {
+    width: 100%;
+    height: 40vh;
+    background-color: #2a3b47;
+    font-size: 1.2vmax;
+}
+
+.footer-content {
+    height: 100%;
+    color: #657074;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    text-align: center;
+
+    div {
+        height: 20vh;
+    }
+}
+
+.footer-name{
+    div {
+        padding-top: 10px;
+    }
+}
+
+.footer-content strong {
+    font-size: 2vmax;
+    color: #FFF;
+}
+
+.footer-navigate-pages {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    padding-top: 10px;
+}
+
+.footer-link {
+    background-color: inherit;
+    border: none;
+}
+
+.footer-link:hover {
+    cursor: pointer;
+    color: var(--main-color);
+    transition: .1s;
+}
+
+.footer-connect-icons {
+    font-size: 2.5vmax;
+    padding-top: 10px;
+    display: flex;
+    justify-content: space-around;
+
 }
