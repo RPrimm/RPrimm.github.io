@@ -9,6 +9,7 @@ i18n
   .use(Backend)
   .init({
     debug: true,
+    loadPath: '/locales/{{lng}}/{{ns}}.json',
     fallback: 'en'
   });
 
