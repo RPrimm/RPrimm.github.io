@@ -8,8 +8,7 @@ i18n
   .use(LanguageDetector)
   .use(Backend)
   .init({
-    debug: true,
-    loadPath: '/portfolio/locales/{{lng}}/{{ns}}.json',
+    loadPath: '/portfolio/locales/{{lng}}/translation.json',
     fallback: 'en'
   });
 
