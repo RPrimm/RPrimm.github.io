@@ -4,13 +4,6 @@ import { useTranslation } from 'react-i18next'
 function Header({ scrollTo }) {
   const { t, i18n } = useTranslation()
 
-  const startLanguage = () => {
-    let current = i18n.language
-    if(current = "de"){
-      return "English"
-    }
-    return "Deutsch"
-  }
   const changeLanguage = () => {
     if(buttonName === "English") {
       setButtonName("Deutsch")
@@ -21,7 +14,7 @@ function Header({ scrollTo }) {
     }
   }
 
-  const [buttonName, setButtonName] = useState('')
+  const [buttonName, setButtonName] = useState(i18n.language === "en-US"?"Englsih":"Deutsch")
 
   return (
     <div className='header'>

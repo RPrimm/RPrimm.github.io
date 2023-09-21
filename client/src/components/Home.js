@@ -9,9 +9,6 @@ function Home() {
           <div className='message'>
             <h1>{t('home.hello')}</h1>
           </div>
-          <div className='art'>
-            <h1>placeholder</h1>
-          </div>
         </div>
       </div>
   )

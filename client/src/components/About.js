@@ -13,7 +13,7 @@ function About() {
           </div>
           <div className='about-main'>
             <div className='about-main-art'>
-              Placeholder
+
             </div>
             <div className='about-main-text'>
               <h2>Rocky Primm</h2>

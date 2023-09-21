@@ -110,6 +110,11 @@ body {
 }
 
 /*********HOME**********/
+#home {
+    background-color: var(--main-color);
+    color: #FFF;
+}
+
 .home-content {
     display: flex;
     justify-content: space-around;
@@ -135,6 +140,10 @@ body {
     display: flex;
     align-items: center;
     justify-content: center;
+
+    img {
+        width: 30vmax;
+    }
 }
 
 .about-main-text {
@@ -234,7 +243,7 @@ body {
     }
 }
 .project:hover {
-    transform: translate(0, -10px);
+    transform: translate(0, -10px); 
 }
 
 .project-info {
