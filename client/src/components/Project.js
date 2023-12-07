@@ -6,7 +6,7 @@ function Project({ img, title, languages }) {
 
   return (
     <div className='project'>
-        <img src={img} className='project-image' alt='Project image'/>
+        <img src={img} alt='Project image'/>
         <div className='project-info'>
             <div className='project-top'>
                 <h3 className='font-m' style={{margin: 0}}>Fake Store</h3>
