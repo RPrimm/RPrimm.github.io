@@ -228,14 +228,17 @@ body {
 
 /*********PORTFOLIO**********/
 .portfolio-main {
-    display: grid;
-    grid-template-columns: repeat(auto-fill,minmax(20vmax, 1fr));
+    /* display: grid;
+    grid-template-columns: repeat(auto-fill,minmax(20vmax, 1fr)); */
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
 }
 
 .project {
     color: #FFF;
-    width: 20vw;
-    height: 50vh;
+    width: 20vmax;
+    height: 25vmax;
     margin: 10px;
     display: flex;
     flex-direction: column;
@@ -243,9 +246,9 @@ body {
     img {
         border-radius:10px 10px 0 0;
     }
-}
-.project:hover {
-    transform: translate(0, -10px); 
+    a {
+        color: #FFF;
+    }
 }
 
 .project-info {
@@ -264,21 +267,25 @@ body {
     justify-content: space-between;
 }
 
-.project-top-buttons {
-    button {
-        background-color: inherit;
-        color: #FFF;
-        margin-right: 5px;
-        font-size: 1.6vmax;
-        border: none;
-        transition: 0.2s;
-        svg{
-            margin-top: 2px;
-        }
+.project-footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: end;
+}
+
+.project-button {
+    background-color: inherit;
+    color: #FFF;
+    margin-right: 5px;
+    font-size: 1.6vmax;
+    border: none;
+    transition: 0.2s;
+    svg{
+        margin-top: 2px;
     }
-    button:hover {
-        cursor: pointer;    
-    }
+}
+.project-button:hover{
+    cursor: pointer;
 }
 
 /*********FOOTER**********/
